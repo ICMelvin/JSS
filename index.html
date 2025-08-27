@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <title>IC Melvin — UI/UX, JavaScript, Ethical Hacking</title>
+  <meta name="description" content="Portfolio of IC Melvin — UI/UX Designer, JavaScript Developer, and Ethical Hacker/Penetration Tester. Available for remote collaborations worldwide." />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Orbitron:wght@400;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css" />
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Cdefs%3E%3ClinearGradient id='g' x1='0' y1='0' x2='1' y2='1'%3E%3Cstop offset='0' stop-color='%2300ffd5'/%3E%3Cstop offset='1' stop-color='%238b5cf6'/%3E%3C/linearGradient%3E%3C/defs%3E%3Crect width='100' height='100' rx='20' fill='%230b1020'/%3E%3Ctext x='50' y='58' font-family='Orbitron' font-size='44' text-anchor='middle' fill='url(%23g)'
+  style='font-weight:700;letter-spacing:2px' %3EIM%3C/text%3E%3C/svg%3E"/>
+  <meta name="theme-color" content="#0b1020" />
+</head>
+<body>
+  <div id="page-loader" aria-hidden="true">
+    <div class="loader-core"></div>
+    <div class="loader-ring"></div>
+    <div class="loader-text">Initializing secure interface…</div>
+  </div>
+
+  <header class="site-header glass">
+    <div class="container header-inner">
+      <a class="brand" href="#hero" aria-label="IC Melvin Home">
+        <span class="brand-icon">IM</span>
+        <span class="brand-text">IC Melvin</span>
+      </a>
+      <nav class="main-nav" aria-label="Primary">
+        <a href="#about">About</a>
+        <a href="#skills">Skills</a>
+        <a href="#portfolio">Projects</a>
+        <a href="#services">Services</a>
+        <a href="#testimonials">Testimonials</a>
+        <a class="cta" href="#contact">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <!-- HERO -->
+    <section id="hero" class="section-hero">
+      <canvas id="hero-canvas" aria-hidden="true"></canvas>
+      <div class="hero-overlay container">
+        <div class="role-badge glass">UI/UX • JavaScript • Ethical Hacking</div>
+        <h1>
+          <span class="hello">Hi, I'm</span>
+          <span class="name gradient">IC Melvin</span>
+        </h1>
+        <p class="hero-sub">Designing delightful interfaces, building performant web apps, and securing digital products.</p>
+        <div class="hero-roles">
+          <span class="role-3d">UI/UX Designer</span>
+          <span class="role-3d">JavaScript Developer</span>
+          <span class="role-3d">Ethical Hacker</span>
+        </div>
+        <div class="hero-cta">
+          <a href="#contact" class="btn btn-primary" data-cta="build">Let's Build Something Amazing</a>
+          <a href="#services" class="btn btn-ghost" data-cta="secure">Secure Your Digital Assets</a>
+        </div>
+        <div class="hero-icons" aria-hidden="true">
+          <div class="icon-3d" data-icon="code"></div>
+          <div class="icon-3d" data-icon="shield"></div>
+          <div class="icon-3d" data-icon="pen"></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ABOUT -->
+    <section id="about" class="section section-about">
+      <div class="container grid-2">
+        <div>
+          <h2 class="section-title">About Me</h2>
+          <p id="about-summary" class="muted"></p>
+          <div class="about-points" id="about-points"></div>
+        </div>
+        <div>
+          <div class="about-card glass tilt" id="about-card">
+            <div class="about-location">
+              <svg viewBox="0 0 24 24" width="20" height="20" aria-hidden="true"><path fill="currentColor" d="M12 2a7 7 0 0 0-7 7c0 5.25 7 13 7 13s7-7.75 7-13a7 7 0 0 0-7-7Zm0 9.5a2.5 2.5 0 1 1 0-5 2.5 2.5 0 0 1 0 5Z"/></svg>
+              <span id="about-location"></span>
+            </div>
+            <div class="about-contact">
+              <a id="about-email" href="#"></a>
+              <a id="about-phone" href="#"></a>
+            </div>
+            <div class="about-mission" id="about-mission"></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SKILLS -->
+    <section id="skills" class="section section-skills">
+      <div class="container">
+        <h2 class="section-title">Skills & Expertise</h2>
+        <div id="skills-wrap" class="skills-wrap"></div>
+      </div>
+    </section>
+
+    <!-- PORTFOLIO -->
+    <section id="portfolio" class="section section-portfolio">
+      <div class="container">
+        <div class="section-head">
+          <h2 class="section-title">Selected Projects</h2>
+          <p class="muted">Interactive 3D previews and case studies</p>
+        </div>
+        <div id="projects-grid" class="projects-grid"></div>
+      </div>
+    </section>
+
+    <!-- SERVICES -->
+    <section id="services" class="section section-services">
+      <div class="container">
+        <h2 class="section-title">Services</h2>
+        <div id="services-grid" class="services-grid"></div>
+      </div>
+    </section>
+
+    <!-- TESTIMONIALS -->
+    <section id="testimonials" class="section section-testimonials">
+      <div class="container">
+        <div class="section-head">
+          <h2 class="section-title">What Clients Say</h2>
+          <p class="muted">Trusted by teams across industries</p>
+        </div>
+        <div class="testimonials-slider glass" id="testimonials-slider" aria-roledescription="carousel" aria-label="Testimonials">
+          <button class="slider-btn prev" aria-label="Previous">&#10094;</button>
+          <div class="slider-track" id="slider-track"></div>
+          <button class="slider-btn next" aria-label="Next">&#10095;</button>
+        </div>
+      </div>
+    </section>
+
+    <!-- CONTACT -->
+    <section id="contact" class="section section-contact">
+      <div class="container grid-2">
+        <div>
+          <h2 class="section-title">Let's Connect</h2>
+          <p class="muted">Ready to enhance your user experience or secure your digital assets? Send a message and I’ll get back within 24 hours.</p>
+          <div class="socials" id="social-links"></div>
+        </div>
+        <form class="contact-form glass" id="contact-form" name="contact" method="POST" data-netlify="true" netlify-honeypot="bot-field">
+          <input type="hidden" name="form-name" value="contact" />
+          <p class="hidden"><label>Don’t fill this out: <input name="bot-field" /></label></p>
+          <div class="form-row">
+            <label for="name">Name</label>
+            <input id="name" name="name" type="text" placeholder="Your name" required />
+          </div>
+          <div class="form-row">
+            <label for="email">Email</label>
+            <input id="email" name="email" type="email" placeholder="you@example.com" required />
+          </div>
+          <div class="form-row">
+            <label for="message">Message</label>
+            <textarea id="message" name="message" rows="5" placeholder="Tell me about your project" required></textarea>
+          </div>
+          <div class="form-actions">
+            <button type="submit" class="btn btn-primary">Ready to Enhance Your UX?</button>
+            <button type="button" class="btn btn-ghost" id="btn-security">Get Your Free Security Assessment</button>
+          </div>
+          <div class="form-status" id="form-status" role="status" aria-live="polite"></div>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <div class="footer-brand">
+        <span class="brand-icon">IM</span>
+        <div class="muted small">Awada, Onitsha, Anambra State, Nigeria • Available Remote</div>
+      </div>
+      <div class="footer-copy small">© <span id="year"></span> IC Melvin. All rights reserved.</div>
+    </div>
+  </footer>
+
+  <!-- Libraries: Three.js, GSAP -->
+  <script src="https://cdn.jsdelivr.net/npm/three@0.162.0/build/three.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/three@0.162.0/examples/js/controls/OrbitControls.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/ScrollTrigger.min.js"></script>
+
+  <!-- Content config and app scripts -->
+  <script src="content.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
+
